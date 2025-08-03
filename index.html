@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora de Porcentaje</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Calculadora de Porcentaje</h1>
+
+    <div class="converter">
+      <input type="number" id="numeroBase" placeholder="Número base (ej. 200)" />
+
+      <select id="porcentaje">
+        <option value="">Selecciona un porcentaje</option>
+      </select>
+
+      <button class="btn liquid" onclick="convertir()">Convertir</button>
+      <button class="btn liquid" onclick="resetear()">Limpiar</button>
+      <div class="firma">Gerente Oscar Moya</div>
+
+      <p>Resultado: <span id="resultado"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
